@@ -1,0 +1,111 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.borde{
+    border: solid black;
+}
+
+
+header{
+    grid-area: encabezado;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+#menu{
+    
+}
+nav{
+    grid-area: nav;
+}
+#priConte{
+    grid-area: priCont;
+    display: flex;
+    height: 50vh;
+    background-color: lightblue;
+}
+#contex4{
+    grid-area: contex4;
+    display: flex;
+    height: 25vh;
+    background-color: rgb(59, 59, 168);
+    
+flex-flow: column wrap;
+    flex-direction: column;
+}
+.boxPeque{
+    width: 50%;
+    height: 50%;
+   }
+#boxG1{
+    grid-area: boxG1;
+    
+    background-color: rgb(196, 196, 196);
+}
+#boxG2{
+    grid-area: boxG2;
+    background-color: rgb(196, 196, 196);
+    
+}
+#boxG3{
+    grid-area: boxG3;
+    background-color: rgb(196, 196, 196);
+    
+}
+footer{
+   grid-area: footer;
+}
+
+@media (max-width: 480px) {
+    #contex4{
+        grid-area: contex4;
+        display: flex;
+        height: 50vh;
+        background-color: rgb(255, 170, 255);
+        flex-direction: row;
+    }
+    .boxPeque{
+        width: 100%;
+        height: 20%;
+       }
+    #priConte{
+        grid-area: priCont;
+        display: flex;
+        height: 50vh;
+        background-color: lightblue;
+        
+        flex-direction: column;
+    }
+    header{
+        grid-area: encabezado;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+    }
+    #contenedor{
+        display: grid;
+        grid-template-areas: 
+        "encabezado"
+        "priCont"
+        "contex4"
+        "boxG1"
+        "boxG2"
+        "boxG3"
+        "footer"
+        ;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        height: 30vh;
+        gap: 10px;
+        padding: 10px;
+        
+    }
+   
+}

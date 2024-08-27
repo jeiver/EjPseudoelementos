@@ -1,0 +1,38 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.borde{
+    border: solid black;
+}
+#contenedor{
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "publicidad noticias aside"
+    "pie pie aside";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 80vh;
+    gap: 10px;
+    padding: 10px;
+}
+header{
+    grid-area: encabezado;
+}
+#section1{
+    grid-area: publicidad;
+}
+#section2{
+    grid-area: noticias;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: pie;
+}
